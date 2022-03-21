@@ -1,0 +1,114 @@
+.ranges{
+  width: 300px;
+  height: 26px;
+  padding: 0;
+  background-color: transparent;
+  appearance: none;
+  -moz-appearance: none;
+  border: none; 
+  border-radius: 0;
+  position: relative;
+  right: 2px;
+}
+
+.ranges::-webkit-slider-thumb {
+   -webkit-appearance: none; /* Override default look */
+   appearance: none;
+   background-color: rgba(0, 0, 0, 0.589);
+   height: 30px;
+   width: 4px;  
+   border: 1px ridge rgba(255, 255, 255, 0.842);
+   
+   border-radius: 1px; /*Removes default border-radius that FF applies*/
+}
+
+.channel canvas {
+  float: left;
+  width: 300px;
+  height: 30px;
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 12%) 0px 2px 10px, rgb(0 0 0 / 10%) 0px 2px 5px;
+}
+
+
+.LABContainer{
+  padding: 7px 7px 7px 0px;
+   width: 331px;
+}
+
+.channel{
+  position: relative;
+  padding: 0;
+  margin: 0px 0px 7px 0px;
+}
+
+.inputContainer{
+  position: absolute;
+  top: 0;
+  left: 0; 
+  z-index: 2;
+}
+
+.colorValues{
+  display: none;
+}
+
+
+.colorDetailsRow{
+  width: 300px; 
+  background-color: #ffffffd4; 
+  box-shadow: rgb(0 0 0 / 12%) 0px 2px 10px, rgb(0 0 0 / 10%) 0px 2px 5px;
+  border-radius: 2px 0px 0px 2px;
+}
+
+.colorDetailsContainer{
+  height: 55px;
+}
+
+.colorDetailsFlex{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.withPadding{
+  padding: 7px;
+}
+
+.halfWidth{
+  width: 50%;
+}
+
+.HexLabel{
+  color: grey;
+  margin: 0;
+  padding: 0;
+  font-size: small;
+}
+
+#hexValue{
+  margin: 0;
+  padding: 0;
+}
+
+#hexColor{
+  width: 90%;
+  height: 2px;
+}
+
+.rgbContainer{
+  width: 33%;
+  text-align: center;
+}
+
+.rgbLabel{
+  color: grey;
+  margin: 0;
+  padding: 0;
+  font-size: small;
+}
+
+#rgbValue{
+  transition: background-color 200ms linear 0s;
+  border-radius: 0px 2px 2px 0px;
+}
